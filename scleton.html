@@ -5,6 +5,7 @@
     <title>let's play a match</title>
     <link  rel = "stylesheet" href ="styling.css" >  <!-- css file ko link kr diye ye HTML file se-->
 </head>
+  <!--linked this js file for backend programming-->
 <body>
     <div class="headings">      <!--heading nam ka class home page ke liye taki background me image de sake -->
       <div class = "nvbar">
@@ -13,7 +14,7 @@
         
           <div class = "menu">   <!--menu class box ka kam kr rha jisme headings diye hai-->
             <ul>                
-                   <li> <a href="#"> HOME </a></li>  <!--yha home page ka location diye hai taki click krne pr home page khule-->
+                   <li> <a href="scleton.html"> HOME </a></li>  <!--yha home page ka location diye hai taki click krne pr home page khule-->
                    <li> <a href="#"> MATCHES</a></li>  <!-- yha alag page bna ke unska location dena hai taki click me wo page khule-->
                    <li><a href="#"> TURNAMENTS </a></li>     <!--same as above-->           
             </ul>
@@ -28,15 +29,20 @@
                          turnaments through the button <br>
                          given bellow 
         </p>
-        <buttom class="join"> <a href="signup_page.html">sign up</a></buttom> <!--sign up ke liye alag page khulega to uska location dena hai-->
+        <buttom class="join"> <a href="signup_page.html">sign up</a></buttom> <!--sign up ke liye alag page khulega to uska location diya hai-->
         <div class="form">
+          <form action="#">
             <h2>login here</h2>    <!--log in ka alg se form nam ka class/box bna diye taki styling kr ske -->
-            <input type="email" name="email" placeholder="   username or email"><br>
-            <input type="password" name=""  placeholder="    password   "><br>
-            <button class="btn"><a href="#">sign in</a></button> 
+            <input type="email" name="email" placeholder="   username or email" id="email"><br>
+            <input type="password" name="password"  placeholder="    password   " id="pass"><br>
+            <button class="btn"><a href="#">sign in</a></button>
+          </form> 
         </div>
        </div> 
     </div>
-    
+   <script  src="backend.js"></script>
+                                             <!--linked this js file for backend programming ye last me link kr rhe taki
+                                            ye all html file DOM pe load ho jaye aur hum asani se queryselector 
+                                            wagarah use kr sake -->
 </body>
 </html>
